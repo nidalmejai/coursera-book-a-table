@@ -23,11 +23,9 @@ describe('Header', () => {
   test('contains logo elements', () => {
     render(<Header />);
     
-    // Check if logo container exists
     const logo = screen.getByText('LITTLE LEMON').closest('.logo');
     expect(logo).toBeInTheDocument();
     
-    // Check if lemon icon elements exist
     expect(document.querySelector('.lemon-icon')).toBeInTheDocument();
     expect(document.querySelector('.lemon-shape')).toBeInTheDocument();
     expect(document.querySelector('.leaf')).toBeInTheDocument();

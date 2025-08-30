@@ -20,7 +20,6 @@ describe('RestaurantImage', () => {
   test('contains table setup elements', () => {
     render(<RestaurantImage />);
     
-    // Check if table setup elements exist
     expect(document.querySelector('.table-setup')).toBeInTheDocument();
     expect(document.querySelector('.table')).toBeInTheDocument();
     expect(document.querySelector('.placemat')).toBeInTheDocument();
@@ -45,7 +44,6 @@ describe('RestaurantImage', () => {
     const tableSetups = document.querySelectorAll('.table-setup');
     expect(tableSetups).toHaveLength(3);
     
-    // Check for second and third table setups
     expect(document.querySelector('.table-setup.second')).toBeInTheDocument();
     expect(document.querySelector('.table-setup.third')).toBeInTheDocument();
   });

@@ -36,7 +36,6 @@ const BookingForm: React.FC = () => {
 
   const onSubmit = async (data: BookingFormData) => {
     try {
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       console.log('Booking submitted:', data);
       alert('Table booked successfully!');

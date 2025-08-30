@@ -30,16 +30,14 @@ describe('App', () => {
     
     expect(screen.getByRole('contentinfo')).toBeInTheDocument();
     const footerLogos = screen.getAllByText('LITTLE LEMON');
-    expect(footerLogos).toHaveLength(2); // One in header, one in footer
+    expect(footerLogos).toHaveLength(2);
   });
 
   test('has proper semantic structure', () => {
     render(<App />);
     
-    // Check for main landmark
     expect(screen.getByRole('main')).toBeInTheDocument();
     
-    // Check for sections within main
     const main = screen.getByRole('main');
     expect(main.querySelector('.booking-section')).toBeInTheDocument();
     expect(main.querySelector('.image-section')).toBeInTheDocument();
