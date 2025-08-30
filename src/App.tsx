@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import BookingForm from './components/BookingForm';
-import RestaurantImage from './components/RestaurantImage';
 import Footer from './components/Footer';
 import './App.css';
-
+import restaurantImage from './assets/image 1.png';
 function App() {
   return (
     <div className="App">
@@ -15,7 +14,7 @@ function App() {
             <BookingForm />
           </section>
           <section className="image-section" aria-label="Restaurant interior">
-            <RestaurantImage />
+          <img src={restaurantImage} alt="Restaurant interior" />
           </section>
         </div>
       </main>
